@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background: rebeccapurple;
+}
+#wrapper{
+    width: 450px;
+    min-height: 750px;
+    background: rgb(3,5,11);
+    border-radius: 21px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  #fff;
+    padding-top: 20px;
+}
+
+.header i {
+    font-size: 24px;
+}
+
+.info{
+    min-height: 50px;
+}
+.info .avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    border: 5px solid #1b9dff;
+}
+.info img{
+    max-width: 100%;
+}
+.info .name{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.info .name i{
+    color: aqua;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.analyst{
+    width: 88%;
+    height: 70%;
+    margin: 0px auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+}
+
+.analyst li {
+    width: calc(100%/3 - 5px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.analyst li p:first-child{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.actions{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.actions .facebook,
+.actions .instagram,
+.actions .github{
+    width: 80px;
+    height: 40px;
+    margin: 0px 10px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+
+}
+.actions a{
+    text-decoration: none;
+    color: #fff;
+}
+.actions .facebook{
+    background: linear-gradient(to right,rgb(1,123,255), rgb(5,245,245));
+}
+.actions .github{
+    background: linear-gradient(to right,aqua,rgb(200,67,197));
+}
+.actions .instagram{
+    background: linear-gradient(to right,rgb(200,67,197),#E95950);
+}
+
+.videos{
+    width: 100%;
+    min-width: 20px;
+    margin: 0px auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.videos .video{
+    width: calc(100%/3);
+    height: 100px;
+    border: 1px solid #fff;
+    overflow: hidden; 
+}
+.videos .video a{
+    max-width: 120%;
+    transition: all 0.5s;
+}
+.videos .video a img{
+    object-fit: cover;
+}
+.videos .video:hover a{
+    transform: scale(1.3);
+}
