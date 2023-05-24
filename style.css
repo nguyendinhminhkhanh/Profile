@@ -144,6 +144,8 @@ body{
 }
 .videos .video a img{
     object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 .videos .video:hover a{
     transform: scale(1.3);
